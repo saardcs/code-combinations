@@ -3,7 +3,7 @@ import qrcode
 import io
 from PIL import Image
 
-st.set_page_config(page_title="Code Combinations Midterm", page_icon="🔢")
+st.set_page_config(page_title="Combinations Practice", page_icon="🔢")
 
 # Sidebar QR Code
 st.sidebar.header("Scan the QR Code")
