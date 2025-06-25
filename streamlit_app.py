@@ -59,6 +59,9 @@ q4_options = q3_options
 q4_answer = 62
 q4 = st.radio("4. How many possible characters are there for the fifth spot in the password?", list(q4_options.keys()))
 
+if q4 == "59 possible letters and numbers":
+    st.info("🔍 Check the code restrictions—can characters be the same?")
+
 # Updated Q5 - Text Input
 q5_answer = 916132832
 q5 = st.text_input("5. How many total password combinations are possible?")
