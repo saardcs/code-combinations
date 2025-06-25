@@ -155,5 +155,5 @@ if p1_correct:
             st.subheader("Final Score: 10 / 10")
             st.balloons()
         else:
-            st.error("❌ Problem 2 is incorrect.")
+            st.error("❌ Some answers in Problem 2 are incorrect.")
             st.subheader("Final Score: 5 / 10")
