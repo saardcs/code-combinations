@@ -14,7 +14,7 @@ qr.save(buf)
 buf.seek(0)
 st.sidebar.image(buf, width=250, caption=qr_link)
 
-st.title("Code Combinations – Midterm Practice")
+st.title("Counting Combinations – Midterm Practice")
 
 # Problem 1
 st.header("Problem 1")
