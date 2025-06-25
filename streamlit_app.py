@@ -26,7 +26,7 @@ st.markdown('''
 ''')
 
 # Placeholder image for Problem 1 (replace with your own image later)
-st.image("5ch.png", caption="Problem 1: Code Visual Placeholder")
+st.image("5ch.png")
 
 q1_options = {
     "10 numbers": 10,
