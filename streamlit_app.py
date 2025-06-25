@@ -25,7 +25,7 @@ st.markdown('''
 - Uppercase and lowercase letters  
 ''')
 
-# Placeholder image for Problem 1 (replace with your own image later)
+# Image
 st.image("5ch.png")
 
 q1_options = {
@@ -92,8 +92,8 @@ if p1_correct:
 - Cannot repeat characters  
 ''')
 
-    # Placeholder image for Problem 2 (replace with your own image later)
-    st.image(create_placeholder(), caption="Problem 2: Code Visual Placeholder")
+    # Image
+    st.image("5ch.png")
 
     q6_options = {
         "10 numbers": 10,
