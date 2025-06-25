@@ -20,18 +20,18 @@ st.title("Code Combinations – Midterm Practice")
 st.header("Problem 1")
 st.text("Numbers and letters\nUppercase and lowercase letters")
 
-# Static image for Problem 1
-problem1_img = Image.open("problem1.png")
-st.image(problem1_img, caption="Problem 1 Code Space", use_column_width=True)
+try:
+    problem1_img = Image.open("problem1.png")
+    st.image(problem1_img, caption="Problem 1 Code Space", use_column_width=True)
+except FileNotFoundError:
+    st.warning("⚠️ Image 'problem1.png' not found.")
 
-# Problem 1 questions
 p1_q1 = st.number_input("8. What characters can make up the code?", min_value=0, step=1)
 p1_q2 = st.number_input("9. What sets of characters can the code contain?", min_value=0, step=1)
 p1_q3 = st.number_input("10. How many possible characters are there for the first spot in the password?", min_value=0, step=1)
 p1_q4 = st.number_input("11. How many possible characters are there for the fifth spot in the password?", min_value=0, step=1)
 p1_q5 = st.number_input("12. How many total password combinations are possible?", min_value=0, step=1)
 
-# Check Problem 1
 p1_correct = (
     p1_q1 == 62 and
     p1_q2 == 62 and
@@ -44,18 +44,19 @@ if st.button("Check Problem 1"):
     if p1_correct:
         st.success("✅ Problem 1 is correct.")
     else:
-        st.error("❌ Some answers in Problem 1 are incorrect. Please check again.")
+        st.error("❌ Some answers in Problem 1 are incorrect.")
 
 # === Problem 2 ===
 if p1_correct:
     st.header("Problem 2")
     st.text("Numbers\nCannot repeat characters")
 
-    # Static image for Problem 2
-    problem2_img = Image.open("problem2.png")
-    st.image(problem2_img, caption="Problem 2 Code Space", use_column_width=True)
+    try:
+        problem2_img = Image.open("problem2.png")
+        st.image(problem2_img, caption="Problem 2 Code Space", use_column_width=True)
+    except FileNotFoundError:
+        st.warning("⚠️ Image 'problem2.png' not found.")
 
-    # Problem 2 questions
     p2_q1 = st.number_input("13. What characters can make up the code?", min_value=0, step=1)
     p2_q2 = st.number_input("14. What sets of characters can the code contain?", min_value=0, step=1)
     p2_q3 = st.number_input("15. How many possible characters are there for the first spot in the password?", min_value=0, step=1)
@@ -63,7 +64,7 @@ if p1_correct:
     p2_q5 = st.number_input("17. How many total password combinations are possible?", min_value=0, step=1)
 
     if st.button("Check Problem 2"):
-        score = 5  # Already passed Problem 1
+        score = 5  # From Problem 1
         if p2_q1 != 10:
             st.error("❌ Q13 is incorrect.")
             score -= 1
