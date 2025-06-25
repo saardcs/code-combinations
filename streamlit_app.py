@@ -23,10 +23,15 @@ st.markdown('''
 - Numbers and letters  
 - Uppercase and lowercase letters  
 ''')
-st.text("""
-*     *     *     *     *
-_     _     _     _     _
-""")
+st.markdown(
+    """
+    <pre style="font-size:32px; line-height:1.2; letter-spacing: 20px;">
+* * * * *
+_ _ _ _ _
+    </pre>
+    """,
+    unsafe_allow_html=True,
+)
 
 q1_options = {
     "10 numbers": 10,
@@ -91,10 +96,15 @@ if p1_correct:
 - Numbers only  
 - Cannot repeat characters  
 ''')
-    st.text("""
-*     *     *     *     *
-_     _     _     _     _
-""")
+    st.markdown(
+    """
+    <pre style="font-size:32px; line-height:1.2; letter-spacing: 20px;">
+* * * * *
+_ _ _ _ _
+    </pre>
+    """,
+    unsafe_allow_html=True,
+)
 
     q6_options = {
         "10 numbers": 10,
