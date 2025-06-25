@@ -23,10 +23,9 @@ st.markdown('''
 - Numbers and letters  
 - Uppercase and lowercase letters  
 ''')
-st.markdown("**Code length: 5 characters**")
 st.text("""
-*   *   *   *   *
-_   _   _   _   _
+*     *     *     *     *
+_     _     _     _     _
 """)
 
 q1_options = {
@@ -92,10 +91,9 @@ if p1_correct:
 - Numbers only  
 - Cannot repeat characters  
 ''')
-    st.markdown("**Code length: 5 characters**")
     st.text("""
-*   *   *   *   *
-_   _   _   _   _
+*     *     *     *     *
+_     _     _     _     _
 """)
 
     q6_options = {
