@@ -3,9 +3,9 @@ import qrcode
 import io
 from PIL import Image
 
-st.set_page_config(page_title="Code Combinations Midterm", page_icon="🔢")
+st.set_page_config(page_title="Code Combinations Midterm Practice", page_icon="🔢")
 
-# QR code in sidebar
+# Sidebar QR code
 st.sidebar.header("Scan the QR Code")
 qr_link = "https://code-combinations.streamlit.app"
 qr = qrcode.make(qr_link)
@@ -19,6 +19,7 @@ st.title("Code Combinations – Midterm Practice")
 # === Problem 1 ===
 st.header("Problem 1")
 st.text("Numbers and letters\nUppercase and lowercase letters")
+st.markdown("**Code length: 5 characters**")
 
 try:
     problem1_img = Image.open("problem1.png")
@@ -44,12 +45,13 @@ if st.button("Check Problem 1"):
     if p1_correct:
         st.success("✅ Problem 1 is correct.")
     else:
-        st.error("❌ Some answers in Problem 1 are incorrect.")
+        st.error("❌ Some answers in Problem 1 are incorrect. Please check again.")
 
 # === Problem 2 ===
 if p1_correct:
     st.header("Problem 2")
     st.text("Numbers\nCannot repeat characters")
+    st.markdown("**Code length: 5 characters**")
 
     try:
         problem2_img = Image.open("problem2.png")
@@ -65,26 +67,31 @@ if p1_correct:
 
     if st.button("Check Problem 2"):
         score = 5  # From Problem 1
+
         if p2_q1 != 10:
             st.error("❌ Q13 is incorrect.")
             score -= 1
         else:
             st.success("✅ Q13 is correct.")
+
         if p2_q2 != 10:
             st.error("❌ Q14 is incorrect.")
             score -= 1
         else:
             st.success("✅ Q14 is correct.")
+
         if p2_q3 != 10:
             st.error("❌ Q15 is incorrect.")
             score -= 1
         else:
             st.success("✅ Q15 is correct.")
+
         if p2_q4 != 6:
             st.error("❌ Q16 is incorrect.")
             score -= 1
         else:
             st.success("✅ Q16 is correct.")
+
         if p2_q5 != 30240:
             st.error("❌ Q17 is incorrect.")
             score -= 1
