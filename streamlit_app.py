@@ -1,6 +1,7 @@
 import streamlit as st
 import qrcode
 import io
+from PIL import Image, ImageDraw
 
 st.set_page_config(page_title="Code Combinations Midterm", page_icon="🔢")
 
@@ -23,23 +24,9 @@ st.markdown('''
 - Numbers and letters  
 - Uppercase and lowercase letters  
 ''')
-st.markdown(
-    """
-    <pre style="
-        font-size: 64px; 
-        line-height: 1.1; 
-        letter-spacing: 30px; 
-        font-family: monospace;
-        margin: 0;
-        padding: 0;
-    ">
-* * * * *
-_ _ _ _ _
-    </pre>
-    """,
-    unsafe_allow_html=True,
-)
 
+# Placeholder image for Problem 1 (replace with your own image later)
+st.image("5ch.png", caption="Problem 1: Code Visual Placeholder")
 
 q1_options = {
     "10 numbers": 10,
@@ -104,22 +91,9 @@ if p1_correct:
 - Numbers only  
 - Cannot repeat characters  
 ''')
-    st.markdown(
-    """
-    <pre style="
-        font-size: 64px; 
-        line-height: 1.1; 
-        letter-spacing: 30px; 
-        font-family: monospace;
-        margin: 0;
-        padding: 0;
-    ">
-* * * * *
-_ _ _ _ _
-    </pre>
-    """,
-    unsafe_allow_html=True,
-)
+
+    # Placeholder image for Problem 2 (replace with your own image later)
+    st.image(create_placeholder(), caption="Problem 2: Code Visual Placeholder")
 
     q6_options = {
         "10 numbers": 10,
