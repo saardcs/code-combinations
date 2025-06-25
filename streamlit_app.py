@@ -25,13 +25,21 @@ st.markdown('''
 ''')
 st.markdown(
     """
-    <pre style="font-size:32px; line-height:1.2; letter-spacing: 20px;">
+    <pre style="
+        font-size: 64px; 
+        line-height: 1.1; 
+        letter-spacing: 30px; 
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    ">
 * * * * *
 _ _ _ _ _
     </pre>
     """,
     unsafe_allow_html=True,
 )
+
 
 q1_options = {
     "10 numbers": 10,
@@ -98,7 +106,14 @@ if p1_correct:
 ''')
     st.markdown(
     """
-    <pre style="font-size:32px; line-height:1.2; letter-spacing: 20px;">
+    <pre style="
+        font-size: 64px; 
+        line-height: 1.1; 
+        letter-spacing: 30px; 
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    ">
 * * * * *
 _ _ _ _ _
     </pre>
